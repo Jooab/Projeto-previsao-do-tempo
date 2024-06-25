@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.weatherapi.com/weather/64x64/day/116.png" type="image/x-icon">
+    <title>App de previsão do tempo</title>
+</head>
+
+<body>
+    <main class="card">
+        <div class="principal">
+            <div class="search-bar">
+                <input type="text" id="input-search" placeholder="Digite uma cidade" class="input">
+                <button type="button" id="search-button" class="button">
+                    <img src="src/images/lupa.png" alt="Imagem da lupa">
+                </button>
+            </div>
+
+            <div class="principal-info">
+                <h2 id="principal-info-title">Use a lupa acima para ver o clima em uma cidade</h2>
+                <p class="city" id="city"></p>
+                <p class="temperature" id="temperature"></p>
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="icon" id="weather-image">
+                <p class="climate" id="climate"></p>
+            </div>
+
+            <div class="secondary-info">
+                <div class="humidity">
+                    <span>Umidade</span>
+                    <span class="humidity-value" id="humidity">--</span>
+                </div>
+                <div class="wind-speed">
+                    <span>Velocidade do Vento</span>
+                    <span class="wind-speed-value" id="wind-speed">--</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src="src/js/index.js"></script>
+</body>
+
+</html>

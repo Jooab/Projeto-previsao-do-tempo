@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #f3f4f6;
+}
+
+.card {
+    max-width: 350px;
+    box-shadow: 17px 17px 19px -4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.principal {
+    background-image: url(../images/background.jpg);
+    background: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.principal .search-bar {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.principal .search-bar .button{
+    background-color: #1a203e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.principal .search-bar .button img{
+    width: 100%;
+    padding: 10px;
+    opacity: 0.3;
+}
+
+.principal .search-bar .input{
+    background-color: #1a203e;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 0.8;
+    padding: 10px;
+    width: 100%;
+}
+
+.principal .search-bar .button{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.8;
+    height: 100%;
+}
+
+
+.principal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.principal-info .city {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.principal-info .temperature {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.principal-info .climate {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.principal-info h2{
+   font-size: 18px;
+   text-align: center;
+}
+
+.principal .secondary-info {
+    color: #000000;
+    font-weight: 600;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+}
+
+.principal .secondary-info .humidity,.principal .secondary-info .wind-speed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unshow {
+    display: none;
+}
+
+@media (max-width:374px) {
+    .card {
+        max-width: 300px;
+    }
+ 
+}
